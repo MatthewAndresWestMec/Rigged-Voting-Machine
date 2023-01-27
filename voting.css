@@ -1,0 +1,95 @@
+.divSize{
+    height: 80vh;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-size: larger;
+}
+
+body{
+    text-align: center;
+    background-image: url("flag.jpg");
+background-repeat: no-repeat;
+    background-color: #cccccc;
+    height:0;
+}
+#container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    margin: 5%;
+    margin-top: 2%;
+    gap: 20px;
+    grid-template-areas:
+    "Nixon McGovern";
+}
+
+#directions{
+    font-size: 8vh;
+    color: white;
+}
+
+#Nixon{
+    grid-area: Nixon;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+    "img1"
+    "text1";
+}
+
+#McGovern{
+    grid-area: McGovern;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 3fr 1fr;
+grid-template-areas:
+"img2"
+"text2";
+}
+
+#text1{
+    grid-area: text1;
+    font-size: 3vh;
+    margin-top:5vh;
+}
+
+#img1 {
+    grid-area: img1;
+    background-image: url(nixon.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+#img2 {
+    grid-area: img2;
+    background-image: url(mcgovern.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+#text2 {
+    grid-area: text2;
+    font-size: 3vh;
+    margin-top: 5vh;
+}
+
+button{
+    margin: 2vh;
+    padding: 1vh 4vh 1vh 4vh;
+    color: white;
+    font-size: 3vh;
+    border-radius: 10px;
+}
+
+#red{
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
