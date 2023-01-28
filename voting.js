@@ -9,7 +9,7 @@
 //     McGovern.style.top = Y + "vh";
 // }
 
-//the error function for voting McGovern
+//the create error function for voting McGovern
 let blueElement = document.getElementById("blue");
 blueElement.addEventListener("click", function() {
     let errors = ["Error: Something went wrong!", "Error: Invalid input!", "Error: Please try again!", "Error: System overload!"];
@@ -27,12 +27,11 @@ blueElement.addEventListener("click", function() {
     }
 });
 
-//click event listener for Nixon
-let thankYouButton = document.getElementById("red");
-thankYouButton.addEventListener("click", function() {
-    this.innerHTML = "Thank You For Voting Richard Nixon";
-    console.log("vote counted");
-});
+//onclick event listener for Nixon
+function voteCounted(){
+    document.getElementById("directions").innerHTML = "Thank You For Voting Richard Nixon";
+    console.log("vote counted")
+    }
 
 // this is the onload function
 function voteNixon(){
