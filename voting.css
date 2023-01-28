@@ -54,6 +54,7 @@ grid-template-areas:
     grid-area: text1;
     font-size: 3vh;
     margin-top:5vh;
+    text-align: center;
 }
 
 #img1 {
@@ -76,10 +77,11 @@ grid-template-areas:
     grid-area: text2;
     font-size: 3vh;
     margin-top: 5vh;
+    text-align: center;
 }
 
 button{
-    margin: 2vh;
+    margin:2vh;
     padding: 1vh 4vh 1vh 4vh;
     color: white;
     font-size: 3vh;
@@ -92,4 +94,7 @@ button{
 
 #blue {
     background-color: blue;
+    /* position: absolute; */
 }
+
+

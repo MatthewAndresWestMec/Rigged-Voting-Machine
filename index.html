@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="voting.css">
     <title>Voting Machine</title>
 </head>
-<body onload="animations()">
-   <div id="directions">Vote</div>
+<body onload="voteNixon()">
+   <div id="directions"></div>
+
     <div id="container">
-    <div id="Nixon" class="divSize">
-    <div id="img1"></div>
-    <div id="text1">Richard Nixon<br><button onclick="voteCounted()" id="red">Vote</button></div>
+        <div id="Nixon" class="divSize">
+        <div id="img1"></div>
+        <div id="text1">
+        Richard Nixon<br>
+       <button onclick="voteCounted()" id="red">Vote</button>
+        </div>
     </div>
 
     <div id="McGovern" class="divSize">
-    <div id="img2"></div>
-    <div id="text2">George McGovern<br><button id="blue">Vote</button></div>
+        <div id="img2"></div>
+        <div id="text2">
+        George McGovern<br>
+       <button id="blue" onclick="voteCounted()">Vote</button>
+        </div>
     </div>
 
     </div>

@@ -1,16 +1,21 @@
+let McGovern = document.getElementById("blue");
+McGovern.addEventListener("mouseover",moveButton);
 
-function animations(){
-
+function moveButton(){
+    McGovern.style.position = "absolute";
+    let X = (Math.round(Math.random()*90));
+    let Y = (Math.round(Math.random()*90));
+    McGovern.style.left = X + "vw";
+    McGovern.style.top = Y + "vh";
 }
+
+// document.onmousemove = mouseCoordinates;
 
 function voteCounted(){
 document.getElementById("directions").innerHTML = "Thank You For Voting Richard Nixon";
 console.log("vote counted")
 }
 
-
-// let cursorY = event.clientY;
-// let cursorX = event.clientX;
-// if(cursorX - McGovernX < 30 & cursorY - McGoverY < 30){
-//     console.log('you are close')
-// }
+function voteNixon(){
+    alert("VOTE FOR NIXON")
+}
