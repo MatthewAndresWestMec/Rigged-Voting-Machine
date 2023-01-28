@@ -10,8 +10,8 @@
 // }
 
 //the create error function for voting McGovern
-let blueElement = document.getElementById("blue");
-blueElement.addEventListener("click", function() {
+let blue1 = document.getElementById("blue");
+blue1.addEventListener("click", function() {
     let errors = ["Error: Something went wrong!", "Error: Invalid input!", "Error: Please try again!", "Error: System overload!"];
     for (let i = 0; i < errors.length; i++) {
         let errorDiv = document.createElement("div");
@@ -55,3 +55,13 @@ document.addEventListener("mousemove", function(event) {
     cursorImage.style.top = event.clientY + 60 + "px";
 });
 
+// mouse on + off functions
+let blue2 = document.getElementById("blue");
+
+blue2.addEventListener("mouseover", function() {
+    blue2.innerHTML = "NOOOOO";
+});
+
+blue2.addEventListener("mouseleave", function() {
+    blue2.innerHTML = "YESSSS";
+});
