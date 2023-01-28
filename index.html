@@ -8,7 +8,8 @@
     <title>Voting Machine</title>
 </head>
 <body onload="voteNixon()">
-   <div id="directions"></div>
+    <img id="cursor-image" src="eagle.png" style="position: absolute;">
+   <div id="directions">Vote:</div>
 
     <div id="container">
         <div id="Nixon" class="divSize">
@@ -23,12 +24,11 @@
         <div id="img2"></div>
         <div id="text2">
         George McGovern<br>
-       <button id="blue" onclick="voteCounted()">Vote</button>
+       <button id="blue">Vote</button>
         </div>
     </div>
 
     </div>
-
     <script src="voting.js"></script>
 </body>
 </html>

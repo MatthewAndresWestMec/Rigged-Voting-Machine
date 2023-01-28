@@ -94,7 +94,18 @@ button{
 
 #blue {
     background-color: blue;
-    /* position: absolute; */
 }
 
 
+.error {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+body {
+    cursor: url("hamb.png"), default;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for the error pop-up */
+        .error {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 3; i++) {
+            // Create a new div element
+            let errorPopup = document.createElement("div");
+            // Add the error class to the div
+            errorPopup.classList.add("error");
+            // Add the error message to the div
+            errorPopup.innerHTML = "Error: Something went wrong!";
+            // Append the div to the body
+            document.body.appendChild(errorPopup);
+            // Set a timeout to remove the div after 3 seconds
+            setTimeout(function(elem) {
+                return function() {
+                    elem.remove();
+                }
+            }(errorPopup), 3000);
+        }
+    </script>
+</body>
+</html>
